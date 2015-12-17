@@ -1,6 +1,6 @@
 /* Base temaplte for ESP8266 */
 
-/* PlatformIO modifications: pelase search for "*.pioenvs"  */
+/* PlatformIO modifications: please search for "*.pioenvs"  */
 
 /* This linker script generated from xt-genldscripts.tpp for LSP . */
 /* Linker Script for ld -N */
