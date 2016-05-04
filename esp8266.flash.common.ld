@@ -153,14 +153,14 @@ SECTIONS
   .irom0.text : ALIGN(4)
   {
     _irom0_text_start = ABSOLUTE(.);
-    *.pioenvs\\*\\lib*.a:(EXCLUDE_FILE (umm_malloc.c.o) .literal*, \
-    EXCLUDE_FILE (umm_malloc.c.o) .text*)
-    *.pioenvs/*/lib*.a:(EXCLUDE_FILE (umm_malloc.c.o) .literal*, \
-    EXCLUDE_FILE (umm_malloc.c.o) .text*)
-    *.pioenvs\\*\\src\\*.o(EXCLUDE_FILE (umm_malloc.c.o) .literal*, \
-    EXCLUDE_FILE (umm_malloc.c.o) .text*)
-    *.pioenvs/*/src/*.o(EXCLUDE_FILE (umm_malloc.c.o) .literal*, \
-    EXCLUDE_FILE (umm_malloc.c.o) .text*)
+    *.pioenvs\\*\\lib*.a:(EXCLUDE_FILE (umm_malloc.o) .literal*, \
+    EXCLUDE_FILE (umm_malloc.o) .text*)
+    *.pioenvs/*/lib*.a:(EXCLUDE_FILE (umm_malloc.o) .literal*, \
+    EXCLUDE_FILE (umm_malloc.o) .text*)
+    *.pioenvs\\*\\src\\*.o(EXCLUDE_FILE (umm_malloc.o) .literal*, \
+    EXCLUDE_FILE (umm_malloc.o) .text*)
+    *.pioenvs/*/src/*.o(EXCLUDE_FILE (umm_malloc.o) .literal*, \
+    EXCLUDE_FILE (umm_malloc.o) .text*)
     *libm.a:(.literal .text .literal.* .text.*)
     *libgcc.a:_umoddi3.o(.literal .text)
     *libgcc.a:_udivdi3.o(.literal .text)
